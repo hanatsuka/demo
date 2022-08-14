@@ -7,7 +7,7 @@ import Error from "./components/Error";
 ReactDOM.render(
     <>
         <Hello compiler="TypeScript" framework="React" />
-        <Error />
+        {/* <Error /> */}
     </>,
     document.getElementById("root")
 );
