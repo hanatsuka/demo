@@ -2,6 +2,7 @@ const path = require("path");
 const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
     .BundleAnalyzerPlugin;
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const EncodingPlugin = require('webpack-encoding-plugin');
 module.exports = {
     entry: "./src/index.tsx",
     mode: "production",
@@ -57,6 +58,9 @@ module.exports = {
         // 获取html模板 应该是自动插入dist文件
         new HtmlWebpackPlugin({
             template: `${path.resolve(__dirname, "public")}/index.html`,
+        }),
+        new EncodingPlugin({
+            encoding: 'utf-8'
         }),
         // new BundleAnalyzerPlugin()
     ],
