@@ -40,6 +40,11 @@ module.exports = {
             },
         ],
     },
+    performance: {
+        hints: 'error', 
+        maxAssetSize: 300000, // 整数类型（以字节为单位）
+        maxEntrypointSize: 500000 // 整数类型（以字节为单位）
+      },
     // When importing a module whose path matches one of the following, just
     // assume a corresponding global variable exists and use that instead.
     // This is important because it allows us to avoid bundling all of our
