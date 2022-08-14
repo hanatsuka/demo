@@ -9,7 +9,7 @@ export const Hello = (props: HelloProps) => (
     <div>
     <h1>
 
-        Waiting for a beauty~
+        亲亲我的宝贝林艾宇
     </h1>
         <img src={img} alt="" width={500} />
     </div>
